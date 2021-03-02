@@ -41,7 +41,7 @@ fun PuppyDetail(puppyInfo: PuppyInfo, onAdopt: (PuppyInfo) -> Unit = {}) {
     Column(
         Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colors.secondary)
+            .background(MaterialTheme.colors.background)
     ) {
         Image(
             painterResource(id = puppyInfo.avatar),
