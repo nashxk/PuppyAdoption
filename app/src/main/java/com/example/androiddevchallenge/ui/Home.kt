@@ -25,7 +25,7 @@ fun Home() {
     ) {
         val viewModel: MainViewModel = viewModel()
         val currentPuppy = viewModel.currentPuppy
-        PuppyList(puppyList = viewModel.puppyList)  { puppyInfo ->
+        PuppyList(puppyList = viewModel.puppyList) { puppyInfo ->
             if (currentPuppy == null) {
                 viewModel.showPuppy(puppy = puppyInfo)
             }

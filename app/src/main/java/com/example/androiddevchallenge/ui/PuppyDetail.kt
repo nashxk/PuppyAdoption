@@ -39,7 +39,7 @@ fun PuppyDetail(puppyInfo: PuppyInfo, onAdopt: (PuppyInfo) -> Unit = {}) {
                 .padding(16.dp, 8.dp)
                 .weight(1f)
                 .verticalScroll(rememberScrollState(0))
-                ) {
+        ) {
             Text(text = "Name: ${puppyInfo.name}", fontStyle = FontStyle.Italic)
             Text(text = "Gender: ${puppyInfo.gender}")
             Text(text = "Address: ${puppyInfo.address}")

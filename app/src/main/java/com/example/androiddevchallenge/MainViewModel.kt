@@ -6,7 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.example.androiddevchallenge.data.PuppyInfo
 
-class MainViewModel: ViewModel() {
+class MainViewModel : ViewModel() {
 
     private val testDesc = """
         Lovely dog, always keep quite.
@@ -17,16 +17,26 @@ class MainViewModel: ViewModel() {
 
     val puppyList by mutableStateOf(
         listOf(
-            PuppyInfo("1", "Pudding", "6", "Hangzhou, Zhejiang Province",
-                "girl", testDesc, R.drawable.img_pudding),
-            PuppyInfo("2", "Jelly", "1", "Hangzhou, Zhejiang Province",
-                "girl", "Good dog, need a lot of outdoor activities.", R.drawable.img_jelly),
-            PuppyInfo("3", "Beans", "10", "Anqiu, Shandong Province",
-                "girl", "Huge dog, eat too much.", R.drawable.img_beans),
-            PuppyInfo("4", "LittleYellow", "8", "Anqiu, Shandong Province",
-            "girl", "Good dog for watching your yard.", R.drawable.img_little_yellow),
-            PuppyInfo("5", "Niuniu", "15", "Anqiu, Shandong Province",
-                "girl", "Old but healthy", R.drawable.img_niuniu)
+            PuppyInfo(
+                "1", "Pudding", "6", "Hangzhou, Zhejiang Province",
+                "girl", testDesc, R.drawable.img_pudding
+            ),
+            PuppyInfo(
+                "2", "Jelly", "1", "Hangzhou, Zhejiang Province",
+                "girl", "Good dog, need a lot of outdoor activities.", R.drawable.img_jelly
+            ),
+            PuppyInfo(
+                "3", "Beans", "10", "Anqiu, Shandong Province",
+                "girl", "Huge dog, eat too much.", R.drawable.img_beans
+            ),
+            PuppyInfo(
+                "4", "LittleYellow", "8", "Anqiu, Shandong Province",
+                "girl", "Good dog for watching your yard.", R.drawable.img_little_yellow
+            ),
+            PuppyInfo(
+                "5", "Niuniu", "15", "Anqiu, Shandong Province",
+                "girl", "Old but healthy", R.drawable.img_niuniu
+            )
         )
     )
 
