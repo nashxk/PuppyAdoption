@@ -1,9 +1,10 @@
-package com.example.androiddevchallenge
+package com.example.androiddevchallenge.ui
 
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.androiddevchallenge.MainViewModel
 import kotlinx.coroutines.launch
 
 @Composable
